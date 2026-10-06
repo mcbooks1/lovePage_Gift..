@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Secret Gift For You ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#080605">
+</head>
+<body class="locked">
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="veil"></div>
+
+<!-- 2. OPENING SCREEN -->
+<div id="intro">
+  <div class="in-wrap">
+    <h1>I Made Something Special For You…</h1>
+    <p>Take a moment — خذ لحظة، هذا الشيء لك وحدك.</p>
+    <button class="btn" id="openBtn">OPEN YOUR GIFT ✨ | افتح هديتك</button>
+  </div>
+</div>
+
+<main id="main" class="hidden">
+
+  <!-- 3. HERO: images/hero.jpg -->
+  <header class="hero">
+    <div class="bg"><img src="sawirka koowaad.jpg" alt="Portrait of the person this gift is for" decoding="async"></div>
+    <div class="txt">
+      <h2>You Are My Favorite View. | أنت أجمل منظر أحبّه</h2>
+      <p>And somehow, every picture of you feels like a memory worth keeping. | وكل صورة لك تبدو كذكرى تستحق أن تبقى.</p>
+    </div>
+    <div class="scroll">SCROLL TO DISCOVER ↓ | مرّر لاكتشاف المزيد</div>
+  </header>
+
+  <!-- 5. GALLERY: beddel data-cap si aad caption u beddesho -->
+  <section id="gallery">
+    <div class="head rv"><span class="script">remember</span><h2>Moments I Keep | لحظات أحتفظ بها</h2></div>
+    <div class="gal">
+      <figure class="g wide rv" tabindex="0" data-cap="The way the light finds you"><img src="lbaad.jpg" alt="Photo 1" loading="lazy" decoding="async"><span class="frame"></span></figure>
+      <figure class="g p1 rv" tabindex="0" data-cap="Quiet and beautiful"><img src="download.png" alt="Photo 2" loading="lazy"><span class="frame"></span></figure>
+      <figure class="g p2 rv" tabindex="0" data-cap="Pure you"><img src="download (1).png" alt="Photo 3" loading="lazy"><span class="frame"></span></figure>
+      <figure class="g pol pa rv" tabindex="0" data-cap="Just you"><img src="afar.jpg" alt="Photo 4" loading="lazy"></figure>
+      <figure class="g pol pb rv" tabindex="0" data-cap="A"><img src="shan.jpg" alt="Photo 5" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 6. LOVE LETTER: beddel qoraalka .line -->
+  <section id="letterSec">
+    <div class="head rv"><h2>A Little Message For You 💌 | رسالة صغيرة لك</h2></div>
+    <div class="env-wrap">
+      <div class="env rv" id="env"><div class="back"></div><div class="flap"></div><div class="front"></div><div class="seal">❤</div></div>
+      <button class="btn" id="letterBtn">OPEN MY LETTER | افتح رسالتي</button>
+      
+  <!-- 8. TI
+
+  <!-- 9. FEATURED: images/featured.jpg -->
+  <section class="feat" id="feat">
+    <div class="pimg" id="pimg"><img src="" alt="A favorite portrait" loading="lazy"></div>
+    <h2 class="rv">Some moments deserve to stay forever. | بعض اللحظات تستحق أن تبقى إلى الأبد.</h2>
+  </section>
+
+  <!-- 11. FINAL SURPRISE: images/final.jpg -->
+  <section class="final" id="final">
+    <div class="blur"><img src="" alt="" aria-hidden="true" loading="lazy"></div>
+    <div class="glow"></div>
+    <div class="in-wrap">
+      <div class="pre" style="display:grid;gap:1.6rem;justify-items:center">
+        <h2 class="rv">And If I Had To Choose Again… | ولو كان عليّ أن أختار من جديد…</h2>
+        <p class="big rv">I Would Still Choose You. ❤️ | سأختاركِ أنتِ دائماً. ❤️</p>
+        <button class="btn rv" id="surpriseBtn">ONE MORE SURPRISE ✨ | مفاجأة أخيرة</button>
+      </div>
+      <div class="reveal-box">
+        <div class="photo"><img src="lix.jpg" alt="The most special photo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER -->
+  <footer>
+    <p class="script">Made with love ❤️ | صُنعت بحب</p>
+    <p>FOR SOMEONE VERY SPECIAL. | لشخص مميز جداً.</p>
+  </footer>
+</main>
+
+<!-- 10. MUSIC: floating button, manual play only -->
+<button id="music" aria-label="Play our song" aria-pressed="false">
+  <span class="bars"><i></i><i></i><i></i><i></i></span><span class="t">♪ OUR SONG | أغنيتنا</span><span id="mState">PLAY</span>
+</button>
+
+
+<!-- LIGHTBOX -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lbX" aria-label="Close">&times;</button>
+  <button id="lbP" aria-label="Previous photo">&#10094;</button>
+  <figure><img id="lbI" src="" alt=""><figcaption id="lbC"></figcaption></figure>
+  <button id="lbN" aria-label="Next photo">&#10095;</button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
